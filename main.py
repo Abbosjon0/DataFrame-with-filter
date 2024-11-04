@@ -6,11 +6,11 @@ baza = {
     "maktab": ["22-maktab", "15-maktab", "12-maktab", "5-maktab", "7-maktab", "9-maktab", "6-maktab", "14-maktab", "10-maktab", "18-maktab"]
 }
 df=pd.DataFrame(baza)
-#print(df)
-#print("\n\n")
+print(df)
+print("\n\n")
 filter=df[(df["jins"]=="erkak") & (df["yosh"]>=15)]
-#print(filter)
-
+print(filter)
+print("\n\n")
 eng_katta_yosh = df["yosh"].max()
 max=df[df["yosh"]==eng_katta_yosh]
 print(max)
